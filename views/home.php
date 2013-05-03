@@ -26,9 +26,9 @@
     <tr>
       <td><?= $item['pub_date'] ?></td>
       <td><a class="item_url" href="<?= $item['permalink'] ?>"><?= $item['title'] ?></a></td>
-      <td class="twitter_count"><?= $item['tweet_count'] ?></td>
-      <td class="facebook_count"><?= $item['fb_count'] ?></td>
-      <td class="stumbleupon_count"><?= $item['su_count'] ?></td>
+      <td class="twitter_count"></td>
+      <td class="facebook_count"></td>
+      <td class="stumbleupon_count"></td>
     </tr>
     <? } ?>
   </table>
