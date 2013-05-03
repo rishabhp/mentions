@@ -23,7 +23,7 @@ class SocialCounter {
     $limit_flag = 0;
 
     $content_type = get_headers($url, 1)['Content-Type'];
-    if (strpos($content_type, 'xml') !== false && strpos($content_type, 'atom') !== false) {
+    if (strpos($content_type, 'xml') !== false || strpos($content_type, 'atom') !== false) {
       $rss_or_xml = true;
     }
     else {
