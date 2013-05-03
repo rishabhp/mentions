@@ -125,6 +125,7 @@ footer a {
 
 #social_buttons {
 	float: right;
+	text-align: left;
 }
 #twitter_button, #facebook_button, #googleplus_button {
 	float: left; overflow: hidden;
@@ -136,7 +137,7 @@ footer a {
 	width: 85px;
 }
 #facebook_button {
-	width: 55px;
+	width: 75px;
 }
 
 #feed_recommend{
