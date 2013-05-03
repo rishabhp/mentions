@@ -52,7 +52,7 @@ class SocialCounter {
       $data = json_decode($response);
 
       if (isset($data->result) && isset($data->result->views))
-        return = (int) $data->result->views;
+        return (int) $data->result->views;
       else
         return 0;
   }
