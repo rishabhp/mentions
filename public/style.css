@@ -129,12 +129,13 @@ footer a {
 }
 #twitter_button, #facebook_button, #googleplus_button {
 	float: left; overflow: hidden;
+	margin-right: 5px;
 }
 #googleplus_button {
 	width: 32px;
 }
 #twitter_button {
-	width: 85px;
+	width: 82px;
 }
 #facebook_button {
 	width: 75px;
