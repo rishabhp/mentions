@@ -8,9 +8,8 @@ class SocialCounter {
   public $fb_api_url = 'https://graph.facebook.com/?ids=';
   public $su_api_url = 'http://www.stumbleupon.com/services/1.01/badge.getinfo?url=';
 
-  public function __construct($client, $simple_pie) {
+  public function __construct($client) {
     $this->Client = $client;
-    $this->SimplePie = $simple_pie;
   }
 
   /*
