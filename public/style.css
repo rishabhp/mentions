@@ -95,7 +95,7 @@ h1 {
   padding: 10px;
   border-radius: 3px;
   border: 0 none;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   width: 350px;
   margin-right: 10px;
 }
@@ -140,7 +140,11 @@ footer a {
 
 #feed_recommend{
 	color: white;
-	margin-bottom: 70px;
+	margin-bottom: 60px;
+	opacity: 0.5;
+}
+#feed_recommend:hover {
+	opacity: 1;
 }
 #feed_recommend a {
 	color: white;
