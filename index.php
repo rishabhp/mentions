@@ -34,6 +34,13 @@ if (isset($_GET['url'])) {
     // For that getting the Feeds URL is important
 
     // '@(https?://\S+?feed\S+)@ui' ???
+    $url_page_contents = $client->get($url);
+    preg_match('@(https?://\S+?feed[\S^"\']+)@ui', $url_page_contents, $match);
+    // pr($match);
+
+    if (isset($match[0])) {
+      $recommend_feed_url = trim($match[0]);
+    }
   }
 }
 
