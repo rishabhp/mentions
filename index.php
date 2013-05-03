@@ -41,13 +41,11 @@ if(isset($_GET['get_count_for']) && isset($_GET['service']))
 	$url = $_GET['get_count_for'];
 	$service = $_GET['service'];
 	
-	$social_counter = new SocialCounter();
+	$social_counter = new SocialCounter($client, $simple_pie);
 	if($service == "twitter")
 	{
-		echo "twitter";
 		$count = $social_counter->getTweetCount($url);
-		var_dump($count);
-		die();
+		die($count);
 	}
 }
 
