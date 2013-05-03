@@ -47,7 +47,7 @@
   </form>
 
   <? if (isset($recommend_feed_url)) { ?>
-  <p>You may also want to check social mentions for <a href="<?= e($recommend_feed_url) ?>">your feed</a>.</p>
+  <p>You may also want to check social mentions for <a href="/?url=<?= e($recommend_feed_url) ?>">your feed</a>.</p>
   <? } ?>
 
   <table border="0" cellspacing="0" cellpadding="0">
