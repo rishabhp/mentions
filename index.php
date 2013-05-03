@@ -38,8 +38,11 @@ if (isset($_GET['url'])) {
 
 if(isset($_POST['get_count_for']) && isset($_POST['service']))
 {
+	echo "1";
 	$url = $_POST['get_count_for'];
+	echo "2";
 	$service = $_POST['service'];
+	echo "3";
 	
 	$social_counter = new SocialCounter();
 	if($service == "twitter")
