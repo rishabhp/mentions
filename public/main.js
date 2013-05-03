@@ -38,16 +38,16 @@ function apply_opacity()
 	if($loaded >= $values)
 	{
 		$(".twitter_count").each(function(){
-			opacity = parseInt($(this).html())/highest_tw + 0.2;
-			$(this).css("opacity", opacity);
+			opacity = parseInt($(this).html())/highest_tw + 0.4;
+			$(this).css("color", "rgba(0, 0, 0, "+opacity+")");
 		});
 		$(".facebook_count").each(function(){
-			opacity = parseInt($(this).html())/highest_fb + 0.2;
-			$(this).css("opacity", opacity);
+			opacity = parseInt($(this).html())/highest_fb + 0.4;
+			$(this).css("color", "rgba(0, 0, 0, "+opacity+")");
 		});
 		$(".stumbleupon_count").each(function(){
-			opacity = parseInt($(this).html())/highest_su + 0.2;
-			$(this).css("opacity", opacity);
+			opacity = parseInt($(this).html())/highest_su + 0.4;
+			$(this).css("color", "rgba(0, 0, 0, "+opacity+")");
 		});
 	}
 }
