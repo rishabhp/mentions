@@ -9,7 +9,7 @@
   <h1>Generate social sharing analytics for any URL or RSS Feed.</h1>
 
   <form method="get">
-    <input type="text" name="url" placeholder="url, rss", id="url" value="<?= $url ?>">
+    <input type="text" name="url" placeholder="url, rss eg: http://feeds.mashable.com/Mashable", id="url" value="<?= $url ?>">
     <input type="submit" name="submit" value="GO" id="submit">
   </form>
 
@@ -34,6 +34,8 @@
   </table>
   <footer>
   	made by <a href="https://twitter.com/_rishabhp">@_rishabhp</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    code is <a href="http://github.com/rishabhp/mentions">forkable</a>
   </footer>
   
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>

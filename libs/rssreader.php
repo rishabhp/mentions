@@ -18,6 +18,11 @@ class rssreader {
     $items = [];
     $limit_flag = 0;
 
+    $url = trim($url);
+    if (strpos($url, 'http') === false) {
+      $url = "http://$url";
+    }
+
     $content_type = get_headers($url, 1)['Content-Type'];
     if (strpos($content_type, 'xml') !== false || strpos($content_type, 'atom') !== false) {
       $rss_or_xml = true;
