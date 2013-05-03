@@ -13,29 +13,7 @@ $client = new Client();
 $simple_pie = new SimplePie();
 
 $items = [];
-$url = '';
-
-if (isset($_GET['url'])) {
-  $url = $_GET['url'];
-
-  $reader = new rssreader($client, $simple_pie);
-  $url = $reader->sanitize($url);
-  $items = $reader->getItems($url, 20);
-
-  //$items = $reader->getTweetCount($items);
-  //$items = $reader->getFBCount($items);
-  //$items = $reader->getSUCount($items);
-  
-  //pr($items);die();
-
-  if (!$reader->rss_or_xml) {
-    // We must suggest something like
-    // "Do you want to test [RSS Link] ?"
-    // For that getting the Feeds URL is important
-
-    // '@(https?://\S+?feed\S+)@ui' ???
-  }
-}
+$default_url = 'http://feeds.mashable.com/Mashable';
 
 if(isset($_GET['get_count_for']) && isset($_GET['service']))
 {
@@ -62,5 +40,27 @@ if(isset($_GET['get_count_for']) && isset($_GET['service']))
 		die();
 	}
 }
+else {
+  $url = $_GET['url'] ? $_GET['url'] : $default_url;
+
+  $reader = new rssreader($client, $simple_pie);
+  $url = $reader->sanitize($url);
+  $items = $reader->getItems($url, 20);
+
+  //$items = $reader->getTweetCount($items);
+  //$items = $reader->getFBCount($items);
+  //$items = $reader->getSUCount($items);
+  
+  //pr($items);die();
+
+  if (!$reader->rss_or_xml) {
+    // We must suggest something like
+    // "Do you want to test [RSS Link] ?"
+    // For that getting the Feeds URL is important
+
+    // '@(https?://\S+?feed\S+)@ui' ???
+  }
+}
 
 require('./views/home.php');
+

@@ -4,12 +4,44 @@
   <link rel="stylesheet" type="text/css" href="/public/style.css">
 </head>
 <body>
-  <header><h2><a href="/">Mentions.in</a></h2></header>
+  <header>
+  	<div id="social_buttons">
+	  	<div id="twitter_button">
+		  	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://mentions.in/">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		</div>
+		<div id="facebook_button">
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=163181677023";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+			<div class="fb-like" data-href="http://mentions.in/" data-send="false" data-width="450" data-show-faces="false"></div>
+		</div>
+		<div id="googleplus_button">
+			<!-- Place this tag where you want the +1 button to render. -->
+			<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300" data-href="http://mentions.in/"></div>
+
+			<!-- Place this tag after the last +1 button tag. -->
+			<script type="text/javascript">
+			  (function() {
+				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				po.src = 'https://apis.google.com/js/plusone.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			  })();
+			</script>
+		</div>
+	</div>
+  	<h2><a href="/">Mentions.in</a></h2>
+  </header>
 
   <h1>Generate social sharing analytics for any URL or RSS Feed.</h1>
 
   <form method="get">
-    <input type="text" name="url" placeholder="url, rss eg: http://feeds.mashable.com/Mashable", id="url" value="<?= $url ?>">
+    <input type="text" name="url" id="url" value="<?= $url ?>">
     <input type="submit" name="submit" value="GO" id="submit">
   </form>
 
