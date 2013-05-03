@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
+
+* {margin: 0; padding: 0;}
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  padding: 20px;
+  background: #2c3e50;
+  text-align: center;
+}
+header {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: -20px -20px 50px -20px;
+}
+h2 {
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  font-weight: normal;
+  _font-family:  arial;
+}
+table {
+  _border: 1px solid #ccc;
+  width: 100%;
+  background: white;
+  text-align: left;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+table th, table td {
+  border-bottom: 1px solid #ccc;
+  padding: 7px;
+  min-width: 40px;
+  line-height: 16px;
+}
+table th {
+  background: #ecf0f1;
+  padding: 10px 7px;
+}
+td:first-child {
+  color: #666;
+}
+.rank {
+  background: #16a085;
+  border-radius: 3px;
+  padding: 2px 5px 3px 5px;
+  float: right;
+  color: white;
+  margin-left: 5px;
+  line-height: 1;
+}
+.yellow { background: #f1c40f; }
+.orange { background: #e67e22;}
+.tw {background: hsla(207, 84%, 57%, 0.75);}
+.fb {background: hsla(221, 44%, 41%, 0.75);}
+.pl {background: hsla(6, 65%, 51%, 0.75);}
+.st { background: hsla(11, 83%, 53%, 0.75);}
+
+h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: normal;
+  font-family: Raleway;
+  width: 600px;
+  line-height: 1.35;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#url {
+  padding: 10px;
+  border-radius: 3px;
+  border: 0 none;
+  margin-bottom: 70px;
+  width: 350px;
+  margin-right: 10px;
+}
+#submit {
+  padding: 10px 20px;
+  border-radius: 3px;
+  background: #27ae60;
+  color: white;
+  font-weight: bold;
+  border: 0 none;
+}
