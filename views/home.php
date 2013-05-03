@@ -45,6 +45,10 @@
     <input type="submit" name="submit" value="GO" id="submit">
   </form>
 
+  <? if (isset($recommend_feed_url)) { ?>
+  <p>You may also want to check social mentions for <a href="<?= e($recommend_feed_url) ?>">your feed</a>.</p>
+  <? } ?>
+
   <table border="0" cellspacing="0" cellpadding="0">
     <tr>
       <th class="date" style="">Date</th>
@@ -56,8 +60,8 @@
     </tr>
     <? foreach( $items as $item ) { ?>
     <tr>
-      <td><?= $item['pub_date'] ?></td>
-      <td><a class="item_url" href="<?= $item['permalink'] ?>"><?= $item['title'] ?></a></td>
+      <td><?= e($item['pub_date']) ?></td>
+      <td><a class="item_url" href="<?= e($item['permalink']) ?>"><?= e($item['title']) ?></a></td>
       <td class="twitter_count"></td>
       <td class="facebook_count"></td>
       <td class="stumbleupon_count"></td>
