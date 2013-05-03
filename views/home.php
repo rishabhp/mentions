@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Social Mentions Tracker</title>
   <link rel="stylesheet" type="text/css" href="/public/style.css">
 </head>
 <body>
