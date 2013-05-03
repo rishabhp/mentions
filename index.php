@@ -13,7 +13,7 @@ $client = new Client();
 $simple_pie = new SimplePie();
 
 $items = [];
-$default_url = 'http://feeds.mashable.com/Mashable';
+//$default_url = 'http://feeds.mashable.com/Mashable';
 
 if(isset($_GET['get_count_for']) && isset($_GET['service']))
 {
@@ -59,6 +59,13 @@ else {
     // For that getting the Feeds URL is important
 
     // '@(https?://\S+?feed\S+)@ui' ???
+    $url_page_contents = $client->get($url);
+    preg_match('@(https?://\S+?feed[^"\'\s]+)@ui', $url_page_contents, $match);
+    // pr($match);
+
+    if (isset($match[0])) {
+      $recommend_feed_url = trim($match[0]);
+    }
   }
 }
 
