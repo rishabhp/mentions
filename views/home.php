@@ -73,6 +73,8 @@
   	made by <a href="https://twitter.com/_rishabhp">@_rishabhp</a>
     &nbsp;&nbsp;|&nbsp;&nbsp;
     code is <a href="http://github.com/rishabhp/mentions">forkable</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="mailto:rishabh.pugalia@gmail.com">feedbacks</a>
   </footer>
   
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
