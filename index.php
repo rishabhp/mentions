@@ -40,6 +40,10 @@ if(isset($_POST['get_count_for']) && isset($_POST['service']))
 {
 	$url = $_POST['get_count_for'];
 	$service = $_POST['service'];
+	
+	$social_counter = new SocialCounter();
+	if($service == "twitter")
+		die(getTweetCount($url));
 }
 
 require('./views/home.php');

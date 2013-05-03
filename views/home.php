@@ -15,7 +15,7 @@
 
   <table border="0" cellspacing="0" cellpadding="0">
     <tr>
-      <th style="border-bottom: 5px solid #4e5f72;">Date</th>
+      <th class="date" style="">Date</th>
       <th style="border-bottom: 5px solid #4e5f72;">Title</th>
       <th style="border-bottom: 5px solid hsla(207, 84%, 57%, 1)">Tweets</th>
       <th style="border-bottom: 5px solid hsla(221, 44%, 41%, 1)">Likes</th>
@@ -25,10 +25,10 @@
     <? foreach( $items as $item ) { ?>
     <tr>
       <td><?= $item['pub_date'] ?></td>
-      <td><a href="<?= $item['permalink'] ?>"><?= $item['title'] ?></a></td>
-      <td><?= $item['tweet_count'] ?></td>
-      <td><?= $item['fb_count'] ?></td>
-      <td><?= $item['su_count'] ?></td>
+      <td><a class="item_url" href="<?= $item['permalink'] ?>"><?= $item['title'] ?></a></td>
+      <td class="twitter_count"><?= $item['tweet_count'] ?></td>
+      <td class="facebook_count"><?= $item['fb_count'] ?></td>
+      <td class="stumbleupon_count"><?= $item['su_count'] ?></td>
     </tr>
     <? } ?>
   </table>

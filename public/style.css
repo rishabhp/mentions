@@ -38,6 +38,10 @@ table th, table td {
   min-width: 40px;
   line-height: 16px;
 }
+table th.date {
+	width: 125px;
+	border-bottom: 5px solid #4e5f72;
+}
 table td a {
 	color: black;
 	text-decoration: none;
