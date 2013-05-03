@@ -117,10 +117,12 @@ class SocialCounter {
       $response = $this->Client->get($url);
       
       // $response should be json
-      $data = json_decode($response);
+      $data = json_decode($response, true);
       //pr($data);
-      if (isset($data->{$item['permalink']}) && isset($data->{$item['permalink']}->shares))
-        $items[$key]['fb_count'] = (int) $data->{$item['permalink']}->shares;
+      $data = current($data);
+
+      if (isset($data) && isset($data['shares']))
+        $items[$key]['fb_count'] = (int) $data['shares'];
       else
         $items[$key]['fb_count'] = 0;
     }
