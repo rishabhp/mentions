@@ -35,6 +35,7 @@ table {
   _border-radius: 3px;
   overflow: hidden;
   margin-bottom: 50px;
+  margin-top: 60px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 table th, table td {
@@ -140,7 +141,6 @@ footer a {
 
 #feed_recommend{
 	color: white;
-	margin-bottom: 60px;
 	opacity: 0.5;
 }
 #feed_recommend:hover {
