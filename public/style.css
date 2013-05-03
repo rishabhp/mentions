@@ -35,6 +35,7 @@ table {
   _border-radius: 3px;
   overflow: hidden;
   margin-bottom: 50px;
+  margin-top: 60px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 table th, table td {
@@ -44,7 +45,7 @@ table th, table td {
   line-height: 16px;
 }
 table th.date {
-	width: 125px;
+	width: 140px;
 	border-bottom: 5px solid #4e5f72;
 }
 table td a {
@@ -95,7 +96,7 @@ h1 {
   padding: 10px;
   border-radius: 3px;
   border: 0 none;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   width: 350px;
   margin-right: 10px;
 }
@@ -124,23 +125,28 @@ footer a {
 
 #social_buttons {
 	float: right;
+	text-align: left;
 }
 #twitter_button, #facebook_button, #googleplus_button {
 	float: left; overflow: hidden;
+	margin-right: 5px;
 }
 #googleplus_button {
 	width: 32px;
 }
 #twitter_button {
-	width: 85px;
+	width: 82px;
 }
 #facebook_button {
-	width: 55px;
+	width: 75px;
 }
 
 #feed_recommend{
 	color: white;
-	margin-bottom: 70px;
+	opacity: 0.5;
+}
+#feed_recommend:hover {
+	opacity: 1;
 }
 #feed_recommend a {
 	color: white;

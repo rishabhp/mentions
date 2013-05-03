@@ -20,7 +20,7 @@
 			  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=163181677023";
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
-			<div class="fb-like" data-href="http://mentions.in/" data-send="false" data-width="450" data-show-faces="false"></div>
+			<div class="fb-like" data-href="http://mentions.in/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
 		</div>
 		<div id="googleplus_button">
 			<!-- Place this tag where you want the +1 button to render. -->
