@@ -27,47 +27,34 @@ class SocialCounter {
 	return (int) $data->count;
   }
 
-  public function getFBCount($items) {
+  public function getFBCount($url) {
     $api_url = $this->fb_api_url;
 
-    foreach ($items as $key => $item) {
-      // API URL to call to get counts
-      $url = $api_url . $item['permalink'];
-      $response = $this->Client->get($url);
-      
-      // $response should be json
-      $data = json_decode($response, true);
-      //pr($data);
-      $data = current($data);
+	$url = $api_url . $url;
+	$response = $this->Client->get($url);
 
-      if (isset($data) && isset($data['shares']))
-        $items[$key]['fb_count'] = (int) $data['shares'];
-      else
-        $items[$key]['fb_count'] = 0;
-    }
+	// $response should be json
+	$data = json_decode($response, true);
+	$data = current($data);
 
-    //pr($items);die();
-    return $items;
+	if (isset($data) && isset($data['shares']))
+	return (int) $data['shares'];
+	else
+	return  0;
   }
 
-  public function getSUCount($items) {
+  public function getSUCount($url) {
     $api_url = $this->su_api_url;
 
-    foreach ($items as $key => $item) {
-      // API URL to call to get counts
-      $url = $api_url . $item['permalink'];
+      $url = $api_url . $url;
       $response = $this->Client->get($url);
       
-      // $response should be json
       $data = json_decode($response);
-      //pr($data);
-      if (isset($data->result) && isset($data->result->views))
-        $items[$key]['su_count'] = (int) $data->result->views;
-      else
-        $items[$key]['su_count'] = 0;
-    }
 
-    return $items;
+      if (isset($data->result) && isset($data->result->views))
+        return = (int) $data->result->views;
+      else
+        return 0;
   }
 
 } // end of class

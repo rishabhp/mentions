@@ -45,8 +45,20 @@ if(isset($_GET['get_count_for']) && isset($_GET['service']))
 	if($service == "twitter")
 	{
 		$count = $social_counter->getTweetCount($url);
-		var_dump($count);
-		die($count);
+		echo $count;
+		die();
+	}
+	else if($service == "facebook")
+	{
+		$count = $social_counter->getFBCount($url);
+		echo $count;
+		die();
+	}
+	else if($service == "stumbleupon")
+	{
+		$count = $social_counter->getSUCount($url);
+		echo $count;
+		die();
 	}
 }
 
