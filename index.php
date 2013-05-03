@@ -13,7 +13,7 @@ $client = new Client();
 $simple_pie = new SimplePie();
 
 $items = [];
-//$default_url = 'http://feeds.mashable.com/Mashable';
+$default_url = "http://feeds.mashable.com/Mashable";
 
 if(isset($_GET['get_count_for']) && isset($_GET['service']))
 {

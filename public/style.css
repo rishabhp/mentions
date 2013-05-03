@@ -95,7 +95,7 @@ h1 {
   padding: 10px;
   border-radius: 3px;
   border: 0 none;
-  margin-bottom: 70px;
+  margin-bottom: 10px;
   width: 350px;
   margin-right: 10px;
 }
@@ -136,4 +136,15 @@ footer a {
 }
 #facebook_button {
 	width: 55px;
+}
+
+#feed_recommend{
+	color: white;
+	margin-bottom: 70px;
+}
+#feed_recommend a {
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px solid white;
+	padding-bottom: 3px;
 }

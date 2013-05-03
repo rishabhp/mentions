@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Social Mentions Tracker</title>
+  <title>Social sharing analytics for any URL or RSS Feed.</title>
   <link rel="stylesheet" type="text/css" href="/public/style.css">
 </head>
 <body>
@@ -42,12 +42,12 @@
   <h1>Generate social sharing analytics for any URL or RSS Feed.</h1>
 
   <form method="get">
-    <input type="text" name="url" id="url" value="<?= $url ?>">
+    <input type="text" name="url" id="url" value="<?= $url ?>" placeholder = "Url or RSS. Eg. <?= $url ?>">
     <input type="submit" name="submit" value="GO" id="submit">
   </form>
 
   <? if (isset($recommend_feed_url)) { ?>
-  <p>You may also want to check social mentions for <a href="/?url=<?= e($recommend_feed_url) ?>">your feed links</a>.</p>
+  <p id="feed_recommend">You may also want to check social mentions for <a href="/?url=<?= e($recommend_feed_url) ?>">your feed links</a>.</p>
   <? } ?>
 
   <table border="0" cellspacing="0" cellpadding="0">
