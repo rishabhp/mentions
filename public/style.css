@@ -28,7 +28,7 @@ table {
   width: 100%;
   background: white;
   text-align: left;
-  border-radius: 3px;
+  _border-radius: 3px;
   overflow: hidden;
   margin-bottom: 50px;
 }
@@ -37,6 +37,14 @@ table th, table td {
   padding: 7px;
   min-width: 40px;
   line-height: 16px;
+}
+table td a {
+	color: black;
+	text-decoration: none;
+}
+table td a:hover {
+	border-bottom: 1px solid black;
+	padding-bottom: 2px;
 }
 table th {
   background: #ecf0f1;
@@ -86,4 +94,18 @@ h1 {
   color: white;
   font-weight: bold;
   border: 0 none;
+  cursor: pointer;
+}
+
+footer {
+	color: white;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 11px;
+}
+footer a {
+	color: white;
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	padding-bottom: 5px;
 }

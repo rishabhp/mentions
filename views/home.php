@@ -32,7 +32,9 @@
     </tr>
     <? } ?>
   </table>
-  
+  <footer>
+  	made by <a href="https://twitter.com/_rishabhp">@_rishabhp</a>
+  </footer>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
   <script src="/public/main.js"></script>
 </body>
