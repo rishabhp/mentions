@@ -1,6 +1,5 @@
 var $loaded = 0;
 var $values = $(".twitter_count").length*3;
-console.log($loaded);
 var highest_fb = 0;
 var highest_tw = 0;
 var highest_su = 0;
@@ -39,15 +38,15 @@ function apply_opacity()
 	if($loaded >= $values)
 	{
 		$(".twitter_count").each(function(){
-			opacity = $(this).html()/highest_tw*100 + 0.25;
+			opacity = parseInt($(this).html())/highest_tw + 0.2;
 			$(this).css("opacity", opacity);
 		});
 		$(".facebook_count").each(function(){
-			opacity = $(this).html()/highest_fb*100 + 0.25;
+			opacity = parseInt($(this).html())/highest_fb + 0.2;
 			$(this).css("opacity", opacity);
 		});
 		$(".stumbleupon_count").each(function(){
-			opacity = $(this).html()/highest_su*100 + 0.25;
+			opacity = parseInt($(this).html())/highest_su + 0.2;
 			$(this).css("opacity", opacity);
 		});
 	}
