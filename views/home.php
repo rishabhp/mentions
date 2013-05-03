@@ -4,7 +4,7 @@
   <link rel="stylesheet" type="text/css" href="/public/style.css">
 </head>
 <body>
-  <header><h2>Mentions.in</h2></header>
+  <header><h2><a href="/">Mentions.in</a></h2></header>
 
   <h1>Generate social sharing analytics for any URL or RSS Feed.</h1>
 

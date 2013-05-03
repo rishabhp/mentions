@@ -9,6 +9,15 @@ class rssreader {
     $this->SimplePie = $simple_pie;
   }
 
+  public function sanitize ($url) {
+    $url = trim($url);
+
+    if (strpos($url, 'http') === false) {
+      $url = "http://$url";
+    }
+
+    return $url;
+  }
   
   // If the URL is a feedburner or RSS URL
   // then this method will retrieve ALL item URLs
@@ -17,11 +26,6 @@ class rssreader {
   public function getItems($url, $limit = 50) {
     $items = [];
     $limit_flag = 0;
-
-    $url = trim($url);
-    if (strpos($url, 'http') === false) {
-      $url = "http://$url";
-    }
 
     $content_type = get_headers($url, 1)['Content-Type'];
     if (strpos($content_type, 'xml') !== false || strpos($content_type, 'atom') !== false) {

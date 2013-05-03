@@ -19,6 +19,7 @@ if (isset($_GET['url'])) {
   $url = $_GET['url'];
 
   $reader = new rssreader($client, $simple_pie);
+  $url = $reader->sanitize($url);
   $items = $reader->getItems($url, 20);
 
   //$items = $reader->getTweetCount($items);

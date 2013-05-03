@@ -24,6 +24,9 @@ h2 {
   font-weight: normal;
   _font-family:  arial;
 }
+h2 a {
+  color: white; text-decoration: none;
+}
 table {
   _border: 1px solid #ccc;
   width: 100%;
