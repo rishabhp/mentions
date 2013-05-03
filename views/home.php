@@ -18,7 +18,7 @@
       <th class="date" style="">Date</th>
       <th style="border-bottom: 5px solid #4e5f72;">Title</th>
       <th style="border-bottom: 5px solid hsla(207, 84%, 57%, 1)">Tweets</th>
-      <th style="border-bottom: 5px solid hsla(221, 44%, 41%, 1)">Likes</th>
+      <th style="border-bottom: 5px solid hsla(221, 44%, 41%, 1)">FB Likes</th>
       <!--<th style="border-bottom: 5px solid hsla(6, 65%, 51%, 1)">+1s</th>-->
       <th style="border-bottom: 5px solid hsla(11, 83%, 53%, 1)">Stumbles</th>
     </tr>
