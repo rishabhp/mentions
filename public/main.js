@@ -13,6 +13,7 @@ $("table tr").each(function(e){
 		$.get("index.php", {get_count_for: $url, service: 'twitter'}, function(data){
 			$loaded++;
 			$tr.find(".twitter_count").html(data);
+			console.log(parseInt(highest_tw)+", "+parseInt(data))
 			highest_tw = Math.max(parseInt(highest_tw), parseInt(data));
 			apply_opacity();
 		});
