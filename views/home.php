@@ -9,12 +9,12 @@
   <h1>Generate social sharing analytics for any URL or RSS Feed.</h1>
 
   <form method="get">
-    <input type="text" name="url" placeholder="url, rss eg: http://feeds.mashable.com/Mashable", id="url" value="<?= $url ?>">
+    <input type="text" name="url" placeholder="url, rss eg: http://feeds.mashable.com/Mashable", id="url" value="<?= e($url) ?>">
     <input type="submit" name="submit" value="GO" id="submit">
   </form>
 
   <? if (isset($recommend_feed_url)) { ?>
-  <p>You may also want to check social mentions for <a href="<?= $recommend_feed_url ?>">your feed</a>.</p>
+  <p>You may also want to check social mentions for <a href="<?= e($recommend_feed_url) ?>">your feed</a>.</p>
   <? } ?>
 
   <table border="0" cellspacing="0" cellpadding="0">
@@ -28,8 +28,8 @@
     </tr>
     <? foreach( $items as $item ) { ?>
     <tr>
-      <td><?= $item['pub_date'] ?></td>
-      <td><a class="item_url" href="<?= $item['permalink'] ?>"><?= $item['title'] ?></a></td>
+      <td><?= e($item['pub_date']) ?></td>
+      <td><a class="item_url" href="<?= e($item['permalink']) ?>"><?= e($item['title']) ?></a></td>
       <td class="twitter_count"></td>
       <td class="facebook_count"></td>
       <td class="stumbleupon_count"></td>
