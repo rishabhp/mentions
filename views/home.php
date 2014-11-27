@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Social sharing analytics for any URL or RSS Feed.</title>
-  <link rel="stylesheet" type="text/css" href="/public/style.css">
+  <link rel="stylesheet" type="text/css" href="./public/style.css">
 </head>
 <body>
   <header>
@@ -78,7 +78,7 @@
   </footer>
   
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-  <script src="/public/main.js"></script>
+  <script src="./public/main.js"></script>
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
